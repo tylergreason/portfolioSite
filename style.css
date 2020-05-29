@@ -1,3 +1,7 @@
+:root {
+    --iconWidth: 70px; 
+}
+
 body, html {
     /* background-color: rgb(65, 65, 255); */
     /* font-family: 'Roboto', sans-serif; */
@@ -5,12 +9,38 @@ body, html {
     font-weight: 100;
     line-height: 1.5;
     height: 100%;
+    margin: 0px;
 }
 
 #portfolio__container, #blogposts__container, #intro__container {
     display: flex; 
     flex-flow: row wrap;
     justify-content: space-evenly;
+}
+
+
+#networkLinks {
+    margin: auto; 
+    text-align: center;
+}
+
+.networkLink__icon {
+    height: var(--iconWidth); 
+    
+    margin: 0px;
+    padding: 0px;
+    /* background: #1da1f2; */
+    /* width: var(--iconWidth);  */
+}
+
+.emailIcon {
+    /* make email icon stand out more  */
+    box-sizing: border-box;
+    border: 3px solid black; 
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
 }
 
 .sectionHeader, h2 {
@@ -52,7 +82,7 @@ body, html {
 }
 
 #intro__container h1 {
-    font-size: 12rem;
+    font-size: 6rem;
     line-height: 1;
 
 }
@@ -105,7 +135,7 @@ body, html {
 }
 
 .details__desc {
-    color: green;
+    color: rgb(50,50,50);
     height: 100%; 
     font-size: 1rem;
 }
@@ -115,6 +145,13 @@ body, html {
     flex-flow: row; 
     justify-content: space-evenly;
 }
+
+.details__links a {
+    text-decoration: underline;
+    color: black;
+}
+
+
 
 
 .blogpost {
