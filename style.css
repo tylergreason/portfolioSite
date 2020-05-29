@@ -3,6 +3,13 @@ body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: helvetica neue,open sans,sans-serif;
     font-weight: 100;
+    line-height: 1.5;
+}
+
+#portfolio__container, #blogposts__container, #intro__container {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .sectionHeader, h2 {
@@ -17,23 +24,21 @@ body {
     margin: auto;
 }
 
-
-
 #headshot {
     border-radius: 50%;
     max-width: 200px;
+    align-self: flex-start;
 }
 
 #intro__container {
-    width: 80%;
+    /* width: 80%; */
+    flex-flow: row;
+    margin: auto; 
 }
 
-#portfolio__container, #blogposts__container, #intro__container {
-    display: flex; 
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+#intro__container h1 {
+    font-size: 10rem;
 }
-
 .portfolioCard {
     width: 800px; 
     height: 400px;
