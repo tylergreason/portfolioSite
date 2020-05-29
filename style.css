@@ -19,15 +19,29 @@ body {
 }
 
 .sectionHeader {
-    border-bottom: 1px solid black;
-    width: 20%;
+    /* border-bottom: 1px solid black; */
+    /* width: 20%; */
     margin: auto;
+    font-size: 5rem;
 }
 
 #headshot {
     border-radius: 50%;
     max-width: 200px;
     align-self: flex-start;
+}
+
+
+.background {
+    /* used this page for reference: 
+    https://www.w3schools.com/howto/howto_css_parallax.asp
+     */
+    background-image: url('assets/headshot.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 #intro__container {
@@ -37,7 +51,9 @@ body {
 }
 
 #intro__container h1 {
-    font-size: 10rem;
+    font-size: 12rem;
+    line-height: 1;
+
 }
 .portfolioCard {
     width: 800px; 
