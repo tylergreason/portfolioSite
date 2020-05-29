@@ -96,7 +96,7 @@ a {
     grid-template-rows: repeat(4, 1fr); 
     /* align-items: center;     */
     /* background: pink;  */
-    /* background-color: lightblue; */
+    background-color: lightblue;
     border-radius: 10px;
 }
 
@@ -128,10 +128,6 @@ a {
 /* give children 0 margin */
 .portfolioCard__details, h3, div {
     margin: 0px;
-}
-
-.details__title {
-    
 }
 
 .details__desc {
