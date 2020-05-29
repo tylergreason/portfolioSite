@@ -1,0 +1,118 @@
+body {
+    /* background-color: rgb(65, 65, 255); */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: helvetica neue,open sans,sans-serif;
+    font-weight: 100;
+}
+
+.sectionHeader, h2 {
+    /* width: 50%;  */
+    text-align: center;
+    font-weight: 100; 
+}
+
+.sectionHeader {
+    border-bottom: 1px solid black;
+    width: 20%;
+    margin: auto;
+}
+
+
+
+#headshot {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+#intro__container {
+    width: 80%;
+}
+
+#portfolio__container, #blogposts__container, #intro__container {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.portfolioCard {
+    width: 800px; 
+    height: 400px;
+    padding: 0px;
+    margin: 10px;
+    display: grid; 
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    /* align-items: center;     */
+    /* background: pink;  */
+    /* background-color: lightblue; */
+    border-radius: 10px;
+}
+
+.portfolioCard__img {
+    /* border: 1px solid black;  */
+    /* border-radius: 10px; */
+    padding: inherit;
+    grid-column: 1/4;
+    grid-row: 1/5; 
+    place-self: center; 
+    object-fit: cover; 
+    padding: 0px; 
+    margin: 0px; 
+    width: 100%; 
+    height: 100%;
+    object-position: left;
+}
+
+.portfolioCard__details {
+    display: flex; 
+    flex-flow: column;
+    grid-column: 4/10;
+    grid-row: 1/5; 
+    place-self: center; 
+    height: 100%;
+    padding: 10px;
+}
+
+/* give children 0 margin */
+.portfolioCard__details, h3, div {
+    margin: 0px;
+}
+
+.details__title {
+    
+}
+
+.details__desc {
+    color: green;
+    height: 100%; 
+    font-size: 1rem;
+}
+
+.details__links { 
+    display: flex; 
+    flex-flow: row; 
+    justify-content: space-evenly;
+}
+
+
+.blogpost {
+    max-width: 200px; 
+    height: 200px;
+    margin: 10px;
+}
+
+.blogpost__preview {
+    padding-top: 3px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+.blogpost__date {
+    font-size: 0.8rem;
+    padding-top: 3px;
+}
+
+.blogpost__title {
+    font-size: 1.2rem;
+}
