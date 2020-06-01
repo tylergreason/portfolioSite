@@ -8,9 +8,21 @@
         /* background-position: 50% 1; */
         /* background-size: contain;  */
         /* height: 10 0%;  */
-        height: 20%; 
+        /* height: 50%;  */
         /* background-position: center; */
         /* object-position: bottom center; */
+    }
+
+    .portfolioCard__details, .details__desc {
+        height: auto; 
+    }
+
+    .details__title {
+        margin: 5px; 
+    }
+
+    .intro__details__header {
+        text-align: center; 
     }
 }
 
