@@ -1,0 +1,16 @@
+@media (max-width: 800px){
+    .portfolioCard {
+        display: flex; 
+        flex-flow: column;
+    }
+    
+    .background {
+        /* background-position: 50% 1; */
+        /* background-size: contain;  */
+        /* height: 10 0%;  */
+        height: 20%; 
+        /* background-position: center; */
+        /* object-position: bottom center; */
+    }
+}
+
