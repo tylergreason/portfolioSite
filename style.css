@@ -71,10 +71,11 @@ a {
     /* used this page for reference: 
     https://www.w3schools.com/howto/howto_css_parallax.asp
      */
-    background-image: url('assets/headshot.jpg');
-    height: 40%;
+    background-image: url('assets/bikeRide.png');
+    height: 60%;
     background-attachment: fixed;
     background-position: center; 
+    background-position: 50% 100%; 
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -88,7 +89,7 @@ a {
 #intro__container h1 {
     font-size: 6rem;
     line-height: 1;
-
+    font-weight: 100;
 }
 .portfolioCard {
     width: 800px; 
