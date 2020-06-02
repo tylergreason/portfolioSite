@@ -5,15 +5,9 @@
     }
     
     .background {
-        /* background-position: 50% 1; */
-        /* background-size: contain;  */
-        /* height: 10 0%;  */
-        /* height: 50%;  */
-        /* background-position: center; */
-        /* object-position: bottom center; */
-        width: 100%;
-        height: 100%; 
-        margin-top: -50px; 
+        background-size: auto;
+        background-position-y: 80%;
+        height: 100vh; 
     }
 
     .portfolioCard__details, .details__desc {
@@ -29,6 +23,8 @@
         position: absolute; 
         top: 50px; 
         color: white; 
+        text-shadow: 1px 1px black;
+        /* text-shadow: 2px -2px black, -2px -2px black, -2px 2px black, 2px 2px black; */
     }
 }
 
