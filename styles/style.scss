@@ -1,0 +1,232 @@
+:root {
+    --iconWidth: 70px; 
+    --portfolioCardHeight: 400px; 
+}
+
+body, html {
+    /* background-color: rgb(65, 65, 255); */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: helvetica neue,open sans,sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+    height: 100%;
+    margin: 0px;
+}
+
+#main {
+    padding: 20px;
+    /* margin: 20px;  */
+}
+
+#portfolio__container, #blogposts__container, #intro__container {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+#networkLinks {
+    margin: auto; 
+    text-align: center;
+}
+
+.networkLink__icon {
+    height: var(--iconWidth); 
+    filter: grayscale(100%);
+    margin: 0px;
+    padding: 0px;
+    /* background: #1da1f2; */
+    /* width: var(--iconWidth);  */
+}
+
+.emailIcon {
+    /* make email icon stand out more  */
+    box-sizing: border-box;
+    border: 3px solid black; 
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sectionHeader, h2 {
+    /* width: 50%;  */
+    text-align: center;
+    font-weight: 100; 
+}
+
+.sectionHeader {
+    /* border-bottom: 1px solid black; */
+    /* width: 20%; */
+    margin: auto;
+    margin-top: 50px;
+    font-size: 5rem;
+}
+
+#headshot {
+    border-radius: 50%;
+    max-width: 200px;
+    align-self: flex-start;
+}
+
+
+.background {
+    /* used this page for reference: 
+    https://www.w3schools.com/howto/howto_css_parallax.asp
+     */
+    background-image: url('../assets/bikeRide4.png');
+    height: 60%;
+    background-attachment: fixed;
+    background-position: center; 
+    background-position: 50% 100%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#intro__container {
+    /* width: 80%; */
+    flex-flow: row;
+    margin: auto; 
+}
+
+#intro__container h1 {
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 100;
+}
+.portfolioCard {
+    width: 800px; 
+    min-height: var(--portfolioCardHeight   );
+    padding: 0px;
+    margin: 10px;
+    display: grid; 
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    /* align-items: center;     */
+    /* background: pink;  */
+    /* background-color: lightblue; */
+    border-radius: 10px;
+}
+
+.portfolioCard__img {
+    /* border: 1px solid black;  */
+    /* border-radius: 10px; */
+    padding: inherit;
+    grid-column: 1/4;
+    grid-row: 1/5; 
+    place-self: center; 
+    object-fit: cover; 
+    padding: 0px; 
+    margin: 0px; 
+    width: 100%; 
+    max-height: var(--portfolioCardHeight);
+    overflow: hidden;
+    object-position: top left;
+}
+
+.portfolioCard__details {
+    display: flex; 
+    flex-flow: column;
+    grid-column: 4/10;
+    grid-row: 1/5; 
+    place-self: center; 
+    height: 100%;
+    padding: 10px;
+}
+
+/* give children 0 margin */
+.portfolioCard__details, h3, div {
+    margin: 0px;
+}
+
+.details__desc {
+    color: rgb(50,50,50);
+    height: 100%; 
+    font-size: 1rem;
+}
+
+.details__links { 
+    display: flex; 
+    flex-flow: row; 
+    justify-content: space-evenly;
+}
+
+.details__links a {
+    text-decoration: underline;
+    color: black;
+}
+
+.details__title {
+    margin: auto; 
+}
+
+.blogpost {
+    max-width: 200px; 
+    max-height: 200px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.blogpost__preview {
+    padding-top: 3px;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+/* fadeout instruction from this stack overflow post: 
+https://stackoverflow.com/questions/11837606/fading-out-text-at-bottom-of-a-section-with-transparent-div-but-height-stays-un/11837686
+
+*/
+.fadeout {
+        position: relative; 
+        bottom: 5em;
+        height: 5em;
+        background-image : linear-gradient(to bottom, 
+                        rgba(255,255,255, 0), 
+                        rgba(255,255,255, 1) 70%);
+}
+
+.blogpost__date {
+    font-size: 0.8rem;
+    padding-top: 3px;
+}
+
+.blogpost__title {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 800px){
+    .portfolioCard {
+        display: flex; 
+        flex-flow: column;
+    }
+    
+    .background {
+        /* background-position: 50% 1; */
+        /* background-size: contain;  */
+        /* height: 10 0%;  */
+        /* height: 50%;  */
+        /* background-position: center; */
+        /* object-position: bottom center; */
+        width: 100%;
+        height: 100%; 
+        // margin-top: -50px; 
+    }
+
+    .portfolioCard__details, .details__desc {
+        height: auto; 
+    }
+
+    .details__title {
+        margin: 5px; 
+    }
+
+    .intro__details__header {
+        text-align: center; 
+        position: absolute; 
+        top: 50px; 
+        color: white; 
+    }
+}
+
