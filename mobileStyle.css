@@ -5,9 +5,14 @@
     }
     
     .background {
-        background-size: auto;
+        /* adding next line to remove image on ios because it's not displaying correctly */
         background-position-y: 80%;
         height: 100vh; 
+    }
+
+    /* style only for iphone  */
+    #cover.iPhone {
+        background-size: auto;
     }
 
     .portfolioCard__details, .details__desc {
@@ -31,5 +36,6 @@
     #intro__container {
         width: 100%;
     }
+
 }
 
