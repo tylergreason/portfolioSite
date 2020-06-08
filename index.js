@@ -4,6 +4,6 @@ console.log(navigator.userAgent)
 // find background element 
 const cover = document.getElementById('cover'); 
 // if 'iPhone' is in the userAgent, add ios class to the cover element 
-if (navigator.userAgent.includes('iPhone')){
+if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')){
     cover.classList.add('iPhone')
 }
