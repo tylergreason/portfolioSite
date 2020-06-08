@@ -1,4 +1,4 @@
-console.log(navigator.userAgent)
+// console.log(navigator.userAgent)
 
 // fix cover image not showing right on iPhone
 // find background element 
