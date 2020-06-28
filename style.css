@@ -168,7 +168,7 @@ a {
 
 .blogpost {
     max-width: 200px; 
-    max-height: 200px;
+    height: 250px; 
     margin: 10px;
     overflow: hidden;
 }

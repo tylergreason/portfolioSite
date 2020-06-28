@@ -14,7 +14,7 @@ class Article {
         this.link = link;
         this.title = title; 
         this.date = date; 
-        this.preview = preview.slice(0,130); 
+        this.preview = preview.slice(0,150); 
     }
     create = () => {
         let container = document.createElement('div'); 
