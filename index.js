@@ -14,7 +14,7 @@ class Article {
         this.link = link;
         this.title = title; 
         this.date = date; 
-        this.preview = preview; 
+        this.preview = preview.slice(0,130); 
     }
     create = () => {
         let container = document.createElement('div'); 
@@ -46,6 +46,25 @@ class Article {
 }
 
 let articles = [
+    new Article(
+        "https://medium.com/@tyler.greason/on-developing-a-good-user-experience-as-someone-who-isnt-a-user-experience-designer-6effb29b8dee",
+        "On Developing A Good User Experience As Someone Who Isn’t A User Experience Designer",
+        "Jun 24, 2020",
+        "It should come as no surprise that I enjoy front end development the most. I enjoy using applications that are fun to use, respond well to user input, and organize their information well. I have learned a good deal using desktop and mobile applications over the years. I am in no way a certified designer, but I don’t think you have to be to notice what does and does not work in application design. Today I’m going to share with you some of the things I have learned over the years in hopes of helping you learn them faster than I did."
+    ),  
+    new Article (
+        "https://medium.com/@tyler.greason/10-tools-and-resources-i-use-for-web-development-7d496e054477", 
+        "10 Tools and Resources I Use for Web Development",
+        "June 17, 2020", 
+        "The internet is full of countless resources for web developers. Almost all of those resources are free, and many are open source as well. Below I detail some of my favorite resources. This list is by no means exhaustive, and I would absolutely love hearing from you about what resources you think others could use."
+    ),
+    new Article(
+        "https://medium.com/weekly-webtips/styled-components-hip-cool-stylish-6fc379a0dd60",
+        "Styled Components: Hip, Cool, Stylish",
+        "Jun 10, 2020", 
+        "If you’re looking into what is hip and cool in the realm of styling these days, you have without a doubt heard of styled-components. Styled components are, as the name implies, a method for styling your components in React. And since component-based programming is probably the future of web development, I think it’s safe to say styled-components are going to be the future of CSS and components. Here, I’ll explain a little bit about them, why I think they’re cool, and what might not be so cool about them."
+
+    ),
     new Article(
             "https://medium.com/swlh/how-im-making-my-css-more-efficient-e2e585d01f4b",
             "How I'm Making My CSS More Efficient",
