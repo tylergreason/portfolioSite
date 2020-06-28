@@ -71,3 +71,9 @@ let articles = [
         "On January 6th, 2020, I started my journey toward becoming a full-time software developer with Flatiron School’s Immersive Software"
     )
 ]
+
+// append all articles to the blogposts__container div 
+articles.forEach(article => {
+    let newArticle = article.create(); 
+    blogposts__container.appendChild(newArticle); 
+})
