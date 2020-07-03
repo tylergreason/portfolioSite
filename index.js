@@ -47,6 +47,12 @@ class Article {
 
 let articles = [
     new Article(
+        "https://medium.com/@tyler.greason/experimenting-with-mobile-first-design-c4d2b47cf649",
+        "Experimenting with Mobile First Design",
+        "Jul 1, 2020", 
+        "For the last couple weeks I have been working on a small project called Knave App. This application is not finished quite yet, but it’s in a usable state and I wanted to talk about my experience designing and coding it and what I learned."
+    ),
+    new Article(
         "https://medium.com/@tyler.greason/on-developing-a-good-user-experience-as-someone-who-isnt-a-user-experience-designer-6effb29b8dee",
         "On Developing A Good User Experience As Someone Who Isn’t A User Experience Designer",
         "Jun 24, 2020",
