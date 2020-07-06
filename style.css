@@ -75,8 +75,8 @@ a {
     /* used this page for reference: 
     https://www.w3schools.com/howto/howto_css_parallax.asp
      */
-    background-image: url('assets/bikeRide4.png');
-    height: 70%;
+    background-image: url('assets/077-MMageePhotography.jpg');
+    height: 85%;
     background-attachment: fixed;
     /* background-position: center;  */
     background-position: 50% 100%; 
@@ -95,11 +95,12 @@ a {
     font-size: 6rem;
     line-height: 1;
     font-weight: 100;
+    margin-top: 0px;
 }
 
 .portfolioCard {
     width: 800px; 
-    min-height: var(--portfolioCardHeight   );
+    min-height: var(--portfolioCardHeight);
     padding: 0px;
     margin: 10px;
     display: grid; 
