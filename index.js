@@ -46,6 +46,12 @@ class Article {
 }
 
 let articles = [
+    new Article (
+        "https://medium.com/@tyler.greason/hacking-reacts-jsx-into-pure-javascript-document-fragments-57bc2d20506f?sk=b76d05abb28ae86a1873bef149e87582", 
+        "Hacking React’s JSX Into Pure JavaScript: Document Fragments", 
+        "Jul 8, 2020",
+        "There is no doubt that React is an amazing framework. When I first began learning JSX, React’s unique way of rendering HTML elements to the document, I was put off. I had just become accustomed to rendering elements with pure JavaScript through the method I’m sure we all know:"
+    ),
     new Article(
         "https://medium.com/@tyler.greason/experimenting-with-mobile-first-design-c4d2b47cf649",
         "Experimenting with Mobile First Design",
