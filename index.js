@@ -16,7 +16,7 @@ class Article {
         this.date = date; 
         this.preview = preview.slice(0,150); 
     }
-    create = () => {
+    create(){
         let container = document.createElement('div'); 
         container.classList.add('blogpost'); 
 
