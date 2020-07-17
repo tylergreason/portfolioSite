@@ -47,6 +47,12 @@ class Article {
 
 let articles = [
     new Article (
+        "https://medium.com/@tyler.greason/developing-the-touch-drawer-weve-all-been-waiting-for-f7fd01527a4?sk=4ec54b3950916b0535c218a3bba7207f",
+        "Developing the Touch Drawer We’ve All Been Waiting For",
+        "Jul 15, 2020",
+        "My ongoing side project while looking for work the last couple months has been my Knave app. I wrote a couple weeks back on why I was developing this application and what I learned from it (you can find that article here). Today I want to discuss a big improvement I made on this project: a slide out drawer that works, and feels really slick. Check out the site here and find the GitHub repo here."
+    ),
+    new Article (
         "https://medium.com/@tyler.greason/hacking-reacts-jsx-into-pure-javascript-document-fragments-57bc2d20506f?sk=b76d05abb28ae86a1873bef149e87582", 
         "Hacking React’s JSX Into Pure JavaScript: Document Fragments", 
         "Jul 8, 2020",
