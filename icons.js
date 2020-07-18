@@ -25,9 +25,12 @@ const icons = {
 // function to generate icon element 
 const renderIcon = type => {
     let string = `
-        <a href=${type.link} class="networkLinks__icon ${type.class}">
-            ${type.icon}
-        </a>
+            <a 
+                href=${type.link} 
+                class="networkLinks__icon ${type.class}"
+                >
+                ${type.icon}
+            </a>
     `
     return document.createRange().createContextualFragment(string); 
 }
