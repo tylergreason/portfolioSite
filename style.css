@@ -1,6 +1,7 @@
 :root {
     --iconWidth: 70px; 
     --portfolioCardHeight: 400px; 
+    --iconColor: rgb(0,0,0); 
 }
 
 body, html {
@@ -26,24 +27,35 @@ body, html {
 
 
 #networkLinks {
-    margin: auto; 
-    text-align: center;
+    display: flex; 
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
-.networkLink__icon {
+.networkLinks__icon {
+    box-sizing: border-box;
     height: var(--iconWidth); 
-    filter: grayscale(100%);
-    margin: 0px;
-    padding: 0px;
+    /* filter: grayscale(100%); */
+    margin: 5px;
+    padding: 0px; 
+    width: var(--iconWidth); 
+    height: var(--iconWidth);
+    max-width: var(--iconWidth); 
+    max-height: var(--iconWidth);
+    fill: var(--iconColor);
     /* background: #1da1f2; */
     /* width: var(--iconWidth);  */
+    border-radius: 50%;
+    /* border: 3px solid var(--iconColor); */
 }
 
-.emailIcon {
-    /* make email icon stand out more  */
-    box-sizing: border-box;
-    border: 3px solid black; 
-    border-radius: 10px;
+.networkLinks__icon:hover {
+    fill: red; 
+}
+
+.networkLinks__icon.linkedin{ 
+    /* fix linkedin icon size */
+    width: 60px; 
 }
 
 a {
