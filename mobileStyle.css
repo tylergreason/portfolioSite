@@ -21,6 +21,8 @@
 
     .details__title {
         margin: 5px; 
+        text-align: center;
+        width: 100%;
     }
 
     .intro__details__header {

@@ -179,11 +179,14 @@ a {
     flex-flow: column;
     grid-column: 5/15;
     grid-row: 1/5; 
-    place-self: center; 
+    /* place-self: center;  */
     height: 100%;
-    padding: 10px;
-    background-color: rgba(255,255,255,0.6);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(235, 235, 235, 0.6);
     backdrop-filter: blur(1px);
+    width: auto;
 }
 
 /* give children 0 margin */
@@ -210,7 +213,10 @@ a {
 
 .details__title {
     margin: auto; 
-    font-size: 2rem;
+    margin-left: 0px;
+    font-size: 4rem;
+    text-align: left;
+    width: 30%;  
 }
 
 
