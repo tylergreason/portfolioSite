@@ -1,7 +1,8 @@
-@media (max-width: 800px){
+@media (max-width: 900px){
     .portfolioCard {
         display: flex; 
         flex-flow: column;
+        max-width: 100%;
     }
     
     .background {
@@ -18,11 +19,22 @@
     .portfolioCard__details, .details__desc {
         height: auto; 
     }
+    .portfolioCard__details {
+        background-color: rgba(255,255,255,0);
+        font-weight: 100;
+    }
 
     .details__title {
         margin: 5px; 
         text-align: center;
         width: 100%;
+        font-size: 2rem;
+    }
+    
+    .portfolioCard__img {
+        /* width: 100%; */
+        max-height: 500px;
+        max-width: 100%;
     }
 
     .intro__details__header {

@@ -1,6 +1,6 @@
 :root {
     --iconWidth: 70px; 
-    --portfolioCardHeight: 400px; 
+    --portfolioCardHeight: 500px; 
     --iconColor: rgb(0,0,0); 
 }
 
@@ -144,11 +144,20 @@ a {
     margin-top: 0px;
 }
 
+.details__title {
+    margin: auto; 
+    margin-left: 0px;
+    font-size: 4rem;
+    text-align: left;
+    width: 25%;  
+}
+
 .portfolioCard {
-    width: 800px; 
+    max-width: 70%; 
     min-height: var(--portfolioCardHeight);
     padding: 0px;
     margin: 10px;
+    margin-right: 0px;
     display: grid; 
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(4, 1fr); 
@@ -162,14 +171,16 @@ a {
     /* border: 1px solid black;  */
     /* border-radius: 10px; */
     padding: inherit;
-    grid-column: 1/6;
+    grid-column: 1/auto-fill;
     grid-row: 1/5; 
-    place-self: center; 
+    place-self: initial; 
     object-fit: cover; 
     padding: 0px; 
     margin: 0px; 
-    width: 100%; 
-    max-height: var(--portfolioCardHeight);
+    max-width: 50%; 
+    height: 100%;
+    max-height: 700px;
+    /* max-height: var(--portfolioCardHeight); */
     overflow: hidden;
     object-position: top left;
 }
@@ -177,16 +188,19 @@ a {
 .portfolioCard__details {
     display: flex; 
     flex-flow: column;
-    grid-column: 5/15;
+    grid-column: 6/16;
     grid-row: 1/5; 
     /* place-self: center;  */
     height: 100%;
     padding: 5px;
     margin: 10px;
+    margin-right: 0px;
     border-radius: 10px;
-    background-color: rgba(235, 235, 235, 0.6);
+    background-color: rgba(235, 235, 235, 0.9);
     backdrop-filter: blur(1px);
     width: auto;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 /* give children 0 margin */
@@ -197,26 +211,18 @@ a {
 .details__desc {
     color: rgb(50,50,50);
     height: 100%; 
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .details__links { 
     display: flex; 
-    flex-flow: row; 
+    flex-flow: wrap row; 
     justify-content: space-evenly;
 }
 
 .details__links a {
     text-decoration: underline;
     color: black;
-}
-
-.details__title {
-    margin: auto; 
-    margin-left: 0px;
-    font-size: 4rem;
-    text-align: left;
-    width: 30%;  
 }
 
 
