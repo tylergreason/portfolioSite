@@ -114,3 +114,16 @@ articles.forEach(article => {
     let newArticle = article.create(); 
     blogposts__container.appendChild(newArticle); 
 })
+
+
+// set cover image height so it doesn't change on mobile when vh changes during scroll 
+const windowHeight = window.innerHeight; 
+// find percent of the height the image should be by looking at the .background's height value 
+const background = Array.from(document.getElementsByClassName('background'))[0]
+// check if the user is on mobile (< 800 width)
+if (window.innerWidth < 800){
+    background.style.height = windowHeight + "px"; 
+} else {
+    background.style.height = (windowHeight * .85) + "px";
+}
+
