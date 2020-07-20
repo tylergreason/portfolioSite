@@ -48,7 +48,6 @@ body, html {
     /* border-radius: 50%; */
     /* border: 3px solid var(--iconColor); */
     transition: 0.2s;
-
 }
 
 .networkLinks__icon.linkedin{ 
@@ -74,8 +73,8 @@ body, html {
     /* keep github icon's circular shape  */
     border-radius: 50%;
     border: 3px solid black;
-
 }
+
 .networkLinks__icon.github:hover {
     background-color: black;
     fill: white;
@@ -85,6 +84,18 @@ body, html {
     fill: #c53e30;
 }
 
+.networkLinks__icon.medium {
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.networkLinks__icon.medium:hover {
+    /* keep github icon's circular shape  */
+    /* border: 3px solid black; */
+    fill: white;
+    background-color: black;
+    border: 1px solid black;
+}
 
 a {
     text-decoration: none;
@@ -205,8 +216,6 @@ a {
 }
 
 
-
-
 .blogpost {
     max-width: 200px; 
     height: 250px; 
@@ -229,8 +238,8 @@ https://stackoverflow.com/questions/11837606/fading-out-text-at-bottom-of-a-sect
         bottom: 5em;
         height: 5em;
         background-image : linear-gradient(to bottom, 
-                        rgba(255,255,255, 0), 
-                        rgba(255,255,255, 1) 70%);
+        rgba(255,255,255, 0), 
+        rgba(255,255,255, 1) 70%);
 }
 
 .blogpost__date {
