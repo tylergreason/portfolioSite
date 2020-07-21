@@ -1,18 +1,23 @@
 @media (max-width: 800px){
+    :root {
+        --iconWidth: 20px;
+    }
+
     .portfolioCard {
         display: flex; 
         flex-flow: column;
     }
     
-    .background {
-        /* adding next line to remove image on ios because it's not displaying correctly */
+    #cover {
         background-position-y: 80%;
-        height: 100vh; 
+        /* height: 100vh;  */
     }
 
     /* style only for iphone  */
     #cover.iPhone {
-        background-size: auto;
+        /* background-size: auto; */
+        background-attachment: scroll;
+        /* height: 0px; */
     }
 
     .portfolioCard__details, .details__desc {
@@ -35,6 +40,10 @@
 
     #intro__container {
         width: 100%;
+    }
+
+    #networkLinks {
+        width: 150px; 
     }
 
 }

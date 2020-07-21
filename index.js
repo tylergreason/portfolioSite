@@ -3,9 +3,13 @@
 // fix cover image not showing right on iPhone
 // find background element 
 const cover = document.getElementById('cover'); 
+const bg = Array.from(document.getElementsByClassName('background'))[0]
 // if 'iPhone' is in the userAgent, add ios class to the cover element 
 if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')){
-    cover.classList.add('iPhone')
+    cover.classList.add('iPhone');
+    // cover.style.height = "0px"
+    // bg.style.opacity = 0;
+    // bg.style.backgroundAttachment = "scroll"; 
 }
 
 // class for articles 
@@ -116,14 +120,14 @@ articles.forEach(article => {
 })
 
 
-// set cover image height so it doesn't change on mobile when vh changes during scroll 
-const windowHeight = window.innerHeight; 
-// find percent of the height the image should be by looking at the .background's height value 
-const background = Array.from(document.getElementsByClassName('background'))[0]
-// check if the user is on mobile (< 800 width)
-if (window.innerWidth < 800){
-    background.style.height = windowHeight + "px"; 
-} else {
-    background.style.height = (windowHeight * .85) + "px";
-}
+// // set cover image height so it doesn't change on mobile when vh changes during scroll 
+// const windowHeight = window.innerHeight; 
+// // find percent of the height the image should be by looking at the .background's height value 
+// const background = Array.from(document.getElementsByClassName('background'))[0]
+// // check if the user is on mobile (< 800 width)
+// if (window.innerWidth < 800){
+//     background.style.height = windowHeight + "px"; 
+// } else {
+//     background.style.height = (windowHeight * .85) + "px";
+// }
 
