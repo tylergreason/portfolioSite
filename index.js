@@ -38,13 +38,9 @@ class Article {
         postPreview.classList.add('blogpost__preview'); 
         postPreview.innerText = this.preview; 
 
-        let postFadeout = document.createElement('div'); 
-        postFadeout.classList.add('fadeout'); 
-
         container.appendChild(postLink);
         container.appendChild(postDate);
         container.appendChild(postPreview);
-        container.appendChild(postFadeout);
         return container; 
     }
 }

@@ -2,6 +2,7 @@
     --iconWidth: 30px; 
     --portfolioCardHeight: 400px; 
     --iconColor: rgb(0,0,0); 
+    --backgroundHeight: 100%; 
 }
 
 body, html {
@@ -51,15 +52,20 @@ body, html {
     max-height: var(--iconWidth); 
 }
 
+.networkLinks__icon:hover {
+    transition: 0.2s;
+    transform: translateY(-5px);
+}
+
+.networkLinks__icon svg {
+    vertical-align: middle;
+}
+
 .networkLinks__icon.linkedin{ 
     /* fix linkedin icon size */
     width: 60px; 
 }
 
-.networkLinks__icon:hover {
-    transition: 0.2s;
-    transform: translateY(-10px);
-}
 
 /* specific icon hover effects */
 .networkLinks__icon.linkedin:hover {
@@ -72,13 +78,13 @@ body, html {
 
 .networkLinks__icon.github {
     /* keep github icon's circular shape  */
-    border-radius: 50%;
-    border: 1px solid black;
 }
 
 .networkLinks__icon.github:hover {
+    border-radius: 50px;
     background-color: black;
     fill: white;
+    border: 1px solid black;
 }
 
 .networkLinks__icon.mail:hover {
@@ -127,8 +133,8 @@ a {
     /* used this page for reference: 
     https://www.w3schools.com/howto/howto_css_parallax.asp
      */
-    background-image: url('assets/077-MMageePhotography.jpg');
-    height: 85%;
+    background-image: url('assets/077-1-MMageePhotography.jpg');
+    height: var(--backgroundHeight);
     background-attachment: fixed;
     /* background-position: center;  */
     background-position: 50% 100%; 
@@ -143,11 +149,16 @@ a {
     width: 80%;
 }
 
-#intro__container h1 {
+#intro__details__header {
     font-size: 6rem;
     line-height: 1;
     font-weight: 100;
-    margin-top: 0px;
+    /* margin-top: 0px; */
+    color: white;
+    text-shadow: 1px 1px black;
+    position: absolute;
+    left: 0px;
+    top: 20%;
 }
 
 .portfolioCard {
@@ -223,25 +234,14 @@ a {
     height: 250px; 
     margin: 10px;
     overflow: hidden;
+    mask-image: linear-gradient(to top, transparent 5%, red);
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, red);
 }
 
 .blogpost__preview {
     padding-top: 3px;
     white-space: normal;
     text-overflow: ellipsis;
-}
-
-/* fadeout instruction from this stack overflow post: 
-https://stackoverflow.com/questions/11837606/fading-out-text-at-bottom-of-a-section-with-transparent-div-but-height-stays-un/11837686
-
-*/
-.fadeout {
-        position: relative; 
-        bottom: 5em;
-        height: 5em;
-        background-image : linear-gradient(to bottom, 
-        rgba(255,255,255, 0), 
-        rgba(255,255,255, 1) 70%);
 }
 
 .blogpost__date {
