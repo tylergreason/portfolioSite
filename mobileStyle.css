@@ -1,6 +1,6 @@
 @media (max-width: 800px){
     :root {
-        --iconWidth: 20px;
+        --iconWidth: 12%;
     }
 
     .portfolioCard {
@@ -10,7 +10,7 @@
     
     #cover {
         background-position-y: 80%;
-        /* height: 100vh;  */
+        height: 100%; 
     }
 
     /* style only for iphone  */
@@ -43,8 +43,7 @@
     }
 
     #networkLinks {
-        width: 150px; 
+        width: 50%; 
     }
-
 }
 
