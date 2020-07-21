@@ -1,12 +1,10 @@
 :root {
-    --iconWidth: 70px; 
+    --iconWidth: 10%; 
     --portfolioCardHeight: 400px; 
     --iconColor: rgb(0,0,0); 
 }
 
 body, html {
-    /* background-color: rgb(65, 65, 255); */
-    /* font-family: 'Roboto', sans-serif; */
     font-family: helvetica neue,open sans,sans-serif;
     font-weight: 100;
     line-height: 1.5;
@@ -25,11 +23,17 @@ body, html {
     justify-content: space-evenly;
 }
 
-
 #networkLinks {
     display: flex; 
-    justify-content: center;
+    justify-content: right;
     flex-flow: row wrap;
+    margin: auto; 
+    background-color: white;
+    position: fixed; 
+    top: 0px;
+    right: 0px; 
+    border-radius: 0px 0px 0px 10px; 
+    width: 20vw;
 }
 
 .networkLinks__icon {
