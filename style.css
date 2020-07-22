@@ -58,10 +58,6 @@ body, html {
     transform: translateY(-5px);
 }
 
-.networkLinks__icon svg {
-    vertical-align: middle;
-}
-
 .networkLinks__icon.linkedin{ 
     /* fix linkedin icon size */
     width: 60px; 
