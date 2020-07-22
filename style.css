@@ -75,10 +75,10 @@ body, html {
 
 .networkLinks__icon.github {
     /* keep github icon's circular shape  */
+    border-radius: 50px;
 }
 
 .networkLinks__icon.github:hover {
-    border-radius: 50px;
     background-color: black;
     fill: white;
     border: 1px solid black;
