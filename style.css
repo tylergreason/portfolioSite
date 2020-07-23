@@ -183,6 +183,7 @@ a {
     padding: 0px; 
     margin: 0px; 
     width: 100%; 
+    height: 100%;
     max-height: var(--portfolioCardHeight);
     overflow: hidden;
     object-position: top left;
@@ -248,4 +249,30 @@ a {
 
 .blogpost__title {
     font-size: 1.2rem;
+}
+
+.stdm__img__open {
+    animation: animateOpen 1s ease forwards;
+}
+
+@keyframes animateOpen {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.stdm__img__close {
+    animation: animateClose 1s ease forwards; 
+}
+
+@keyframes animateClose {
+    0% {
+        width: 100%; 
+    }
+    100% {
+        width: 0%;
+    }
 }
