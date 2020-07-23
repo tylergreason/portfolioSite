@@ -150,12 +150,12 @@ a {
     font-size: 6rem;
     line-height: 1;
     font-weight: 100;
-    /* margin-top: 0px; */
+    margin-top: 0px;
     color: white;
     text-shadow: 1px 1px black;
-    position: absolute;
-    left: 0px;
-    top: 5%;
+    position: sticky;
+    /* left: ; */
+    top: 25%;
 }
 
 .portfolioCard {
@@ -231,8 +231,8 @@ a {
     height: 250px; 
     margin: 10px;
     overflow: hidden;
-    mask-image: linear-gradient(to top, transparent 5%, red);
-    -webkit-mask-image: linear-gradient(to top, transparent 5%, red);
+    mask-image: linear-gradient(to top, transparent, white);
+    -webkit-mask-image: linear-gradient(to top, transparent, white);
 }
 
 .blogpost__preview {
