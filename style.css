@@ -253,6 +253,7 @@ a {
 
 .stdm__img__open {
     animation: animateOpen 1s ease forwards;
+    z-index: 1; 
 }
 
 @keyframes animateOpen {
@@ -266,6 +267,7 @@ a {
 
 .stdm__img__close {
     animation: animateClose 1s ease forwards; 
+    z-index: -1;
 }
 
 @keyframes animateClose {
