@@ -159,7 +159,7 @@ a {
 }
 
 .portfolioCard {
-    width: 800px; 
+    width: 900px; 
     min-height: var(--portfolioCardHeight);
     padding: 0px;
     margin: 10px;
@@ -183,7 +183,7 @@ a {
     padding: 0px; 
     margin: 0px; 
     width: 100%; 
-    height: 100%;
+    /* height: 100%; */
     max-height: var(--portfolioCardHeight);
     overflow: hidden;
     object-position: top left;
@@ -251,7 +251,7 @@ a {
     font-size: 1.2rem;
 }
 
-.stdm__img__open {
+.stdm__img.stdm__img__open {
     animation: animateOpen 1s ease forwards;
     z-index: 1; 
 }
@@ -265,16 +265,18 @@ a {
     }
 }
 
-.stdm__img__close {
-    animation: animateClose 1s ease forwards; 
+.stdm__img {
+    /* animation: animateClose 1s ease forwards;  */
     z-index: -1;
 }
 
 @keyframes animateClose {
     0% {
         width: 100%; 
+        grid-column: 1/4;
     }
     100% {
         width: 0%;
+        grid-column: 4/8;
     }
 }
