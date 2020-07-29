@@ -47,6 +47,18 @@ class Article {
 
 let articles = [
     new Article (
+        "https://medium.com/@tyler.greason/what-i-wish-i-knew-when-i-started-my-job-search-a964edf62528?source=friends_link&sk=ae7021821c658ff4d5f78e808d282c69",
+        "What I Wish I Knew When I Started My Job Search",
+        "Jul 29, 2020",
+        "It’s been three months since I finished my spectacular time with Flatiron School. Since then I have taken time to construct my portfolio and online presence, and made a full time job out of finding a job and improving my repertoire of coding abilities. I have learned quite a bit about job hunting through my own actions and failures, and through asking other developers on LinkedIn what worked for them. There are many things I wish I had known when I started my job search. Today, I’m going to share with "
+    ),
+    new Article (
+        "https://medium.com/@tyler.greason/using-svg-images-in-web-development-3da83165aa92",
+        "Using SVG Images in Web Development",
+        "Jul 22, 2020",
+        "Hey everyone! This week’s post is a short tutorial for anyone looking to learn about SVG graphics quickly and use them in their website."
+    ),
+    new Article (
         "https://medium.com/@tyler.greason/developing-the-touch-drawer-weve-all-been-waiting-for-f7fd01527a4?sk=4ec54b3950916b0535c218a3bba7207f",
         "Developing the Touch Drawer We’ve All Been Waiting For",
         "Jul 15, 2020",
