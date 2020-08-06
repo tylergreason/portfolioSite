@@ -47,6 +47,12 @@ class Article {
 
 let articles = [
     new Article (
+        "https://medium.com/@tyler.greason/inheritance-in-javascript-bd9aa1146cb6?source=friends_link&sk=f9facb094b9f7dd8fc417e6cfcc238e1",
+        "Inheritance in JavaScript",
+        "Aug 5th, 2020",
+        "Hi, and welcome to my first multi-part blog post! This week and next I’ll be talking about two types of inheritance in JavaScript: inheritance through prototypes and constructor functions, and inheritance through classes. These articles are for anyone that wants to gain a better understanding of these topics, as classes are a basic programming paradigm that’s important to have a strong grasp on, and prototypes are important to understanding JavaScript. These articles are also for myself; practicing explaining con"
+    ),
+    new Article (
         "https://medium.com/@tyler.greason/what-i-wish-i-knew-when-i-started-my-job-search-a964edf62528?source=friends_link&sk=ae7021821c658ff4d5f78e808d282c69",
         "What I Wish I Knew When I Started My Job Search",
         "Jul 29, 2020",
