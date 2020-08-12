@@ -47,6 +47,12 @@ class Article {
 
 let articles = [
     new Article (
+        "https://medium.com/@tyler.greason/classes-in-javascript-1ecfe96c96a3?sk=f1a87a1de210f746a0cea2cc30a7e1d3",
+        "Classes in JavaScript",
+        "Aug 12th, 2020",
+        "Hey everyone, and welcome to my second article on prototype and classes! This week we’ll review what classes are, how to build and use them, and why you might want to use them over JavaScript’s prototype constructor functions! As always, I’d love to hear some feedback. Comment here, or reach out to me through email, Twitter, GitHub, or my LinkedIn. As of the writing of this article I am actively looking for work. Don’t hesitate to reach out if you’d like to get in touch concerning an employment opportunity."
+    ),
+    new Article (
         "https://medium.com/@tyler.greason/inheritance-in-javascript-bd9aa1146cb6?source=friends_link&sk=f9facb094b9f7dd8fc417e6cfcc238e1",
         "Inheritance in JavaScript",
         "Aug 5th, 2020",
