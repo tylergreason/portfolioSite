@@ -47,6 +47,12 @@ class Article {
 
 let articles = [
     new Article (
+        "https://medium.com/@tyler.greason/a-collection-of-tech-adjacent-thoughts-9439a8a3299e?sk=4ac95bfd359433235cef7eeaabe6c7c2",
+        "A Collection of Tech-Adjacent Thoughts",
+        "Aug 19th, 2020",
+        "Hey everyone, and welcome to my blog post for this week! I'm on a short time budget, as I'm writing this article in the car on the way to Georgia's coast to celebrate my 30th birthday! I didn't quite know what to write about, so I thought why not write a bit about a few things that I've wanted to write about and maybe expand upon them later in another article?"
+    ),
+    new Article (
         "https://medium.com/@tyler.greason/classes-in-javascript-1ecfe96c96a3?sk=f1a87a1de210f746a0cea2cc30a7e1d3",
         "Classes in JavaScript",
         "Aug 12th, 2020",
