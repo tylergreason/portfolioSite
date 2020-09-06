@@ -47,6 +47,24 @@ class Article {
 
 let articles = [
     new Article (
+        "https://medium.com/@tyler.greason/a-quick-introduction-to-modules-in-javascript-6c2716939dfb",
+        "A Quick Introduction to Modules in JavaScript",
+        "Sep 2nd, 2020",
+        "Have you found yourself befuddled by the mess that is your unorganized code? Have you ever wished you could have files that only hold data like variables, functions, and class declarations, and have that data imported by other files, without importing everything else in that file? Have you been driven mad by namespace issues because you keep naming data the same thing over and over in different files and have JavaScript yell at you for it?"
+    ),
+    new Article (
+        "https://medium.com/@tyler.greason/designing-and-building-responsive-websites-what-ive-learned-363704276d3",
+        "Designing and Building Responsive Websites: What I’ve Learned",
+        "Aug 26th, 2020",
+        "Hola y bienvenidos tech readers! I hope you’re doing well and are ready to learn a thing or two about responsive design! I’ve worked with responsive design a lot recently, and that inspired me to share my knowledge on the topic with you. Responsive design can be a bit intimidating, but with the right resources, practice, and a bit of a design-oriented mentality, you’ll be making great looking responsive websites in no time!"
+    ),
+    new Article (
+        "https://medium.com/@tyler.greason/a-collection-of-tech-adjacent-thoughts-9439a8a3299e",
+        "A Collection of Tech-Adjacent Thoughts",
+        "Aug 19th, 2020",
+        "Hey everyone, and welcome to my blog post for this week! I’m on a short time budget, as I’m writing this article in the car on the way to Georgia’s coast to celebrate my 30th birthday! I didn’t quite know what to write about, so I thought why not write a bit about a few things that I’ve wanted to write about and maybe expand upon them later in another article?"
+    ),
+    new Article (
         "https://medium.com/@tyler.greason/classes-in-javascript-1ecfe96c96a3?sk=f1a87a1de210f746a0cea2cc30a7e1d3",
         "Classes in JavaScript",
         "Aug 12th, 2020",
